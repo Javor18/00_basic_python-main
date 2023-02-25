@@ -10,6 +10,7 @@ dict1 = {
 
 def exercise_4(dict1):
 
+    # TODO: You can create without using a set here
     unique_values = set()
 
     for value in dict1.values():

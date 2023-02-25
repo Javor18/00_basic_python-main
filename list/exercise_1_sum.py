@@ -6,6 +6,8 @@ numbers = [1, 2, 3, 4]
 def exercise_2(numbers: list) -> int:
     # Your code here
 
+    # TODO: That's working, you can also use sum()
+    #   https://docs.python.org/3/library/functions.html#sum
     total = 0
 
     for x in numbers:

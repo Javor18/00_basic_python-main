@@ -5,6 +5,9 @@ def exercise_20(list1: list) -> int:
 
     count = 0
 
+    # TODO: You could also create a list comprehension
+    #  taking only integers and doing a len on it
+
     for x in list1:
 
         if isinstance(x, int):

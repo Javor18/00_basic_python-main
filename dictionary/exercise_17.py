@@ -7,6 +7,7 @@
 
 dic = eval(input())
 
+# TODO: Here dic.items() is already a list of tuples
 sort_dic = [(key, value) for key, value in dic.items()]
 
 print(sort_dic)

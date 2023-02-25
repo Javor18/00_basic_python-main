@@ -6,6 +6,13 @@
 
 dic = eval(input())
 
+# TODO: To make it more readable, you can split into multiple lines
 sort_dic = {name: (height, weight) for name, (height, weight) in dic.items() if height >= 6 and weight >= 70}
+
+sort_dic = {
+  name: (height, weight)
+  for name, (height, weight) in dic.items()
+  if height >= 6 and weight >= 70
+}
 
 print(sort_dic)

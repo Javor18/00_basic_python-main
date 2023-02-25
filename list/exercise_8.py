@@ -4,6 +4,7 @@
 def exercise_8(sample_list: list) -> bool:
     # Your code here
 
+    # TODO: here you could also do it in one line: return bool(sample_list)
     if len(sample_list) != 0:
         return True
 
