@@ -4,7 +4,7 @@ numbers = [1, 2, 3, 4]
 
 def exercise_3(numbers: list) -> int:
     # Your code here
-
+    # TODO: Can you do another version without using max?
     return max(numbers)
 
 largest_number = exercise_3(numbers)

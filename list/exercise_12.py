@@ -9,6 +9,9 @@ def exercise_12(list_colors: list) -> bool:
     #
     # return list_colors
 
+    # TODO: Here, you could go simple
+    #   You could remove elements by value as well using
+    #   remove: https://www.w3schools.com/python/python_lists_remove.asp
     filtered_list = []
 
     for x in range(len(list_colors)):

@@ -5,9 +5,9 @@ def exercise_11(list1: list, list2: list) -> bool:
     # Your code here
 
     for x in list1:
-
+        # TODO: I would remove the empty line here
         if x in list2:
-
+            # TODO: I would remove the empty line here
             return True
 
     return False

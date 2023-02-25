@@ -8,6 +8,7 @@
 
 def exercise_7(list):
 
+    # TODO: Rename this variable, not a list :)
     new_list = {}
 
     for key, value in list.items():
