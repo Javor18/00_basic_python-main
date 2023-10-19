@@ -18,7 +18,7 @@ def exercise_4(dict1):
 
     print(unique_values)
 
-    pass
+    return
 
 
 exercise_4(dict1)

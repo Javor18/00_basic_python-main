@@ -21,4 +21,4 @@ def exercise_2(dict1):
     return unique_dict
 
 
-assert exercise_2(dict1) == {("3"): 4}
+assert exercise_2(dict1) == {"1": 2, "3": 4}

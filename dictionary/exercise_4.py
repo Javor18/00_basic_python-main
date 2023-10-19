@@ -21,6 +21,3 @@ def exercise_4(dict1):
     return top_3_nums_dict
 
 print(exercise_4(dict1))
-
-
-
