@@ -41,8 +41,16 @@ cars = [
 
 def exercise_2(cars):
     # Your code here, multiple options, try to find two different ways
-    return
+    # filtered_cars = [sorted(cars, key=lambda car: car["year"])]
 
+    filtered_cars = []
+
+    cars.sort(key=lambda car: car["year"])
+
+    for car in cars:
+            filtered_cars.append(car)
+
+    return filtered_cars
 
 assert exercise_2(cars) == [
     {

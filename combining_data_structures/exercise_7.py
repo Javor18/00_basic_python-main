@@ -12,7 +12,20 @@ big_list = [
 
 def exercise_7(big_list: List[Tuple[int]]) -> Tuple:
     # Your code here. Try to find at least two ways to do it.
-    return
+
+    unique_combinations = []
+
+    # --------First way--------
+    unique_combinations = []
+    for combination in big_list:
+
+        for x in combination:
+            unique_combinations.append(x)
+
+    unique_combinations = set(unique_combinations)
+    print(unique_combinations)
+
+    return tuple(unique_combinations)
 
 
-assert exercise_7(big_list) == (1, 2, 3, 4, 5)
+assert exercise_7(big_list) == (1, 2, 3, 4, 5, 6, 7, 9)

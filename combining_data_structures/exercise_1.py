@@ -40,7 +40,17 @@ cars = [
 
 
 def exercise_1(cars):
-    return
+
+    filtered_cars = []
+
+    for car in cars:
+
+        if int(car["price"].replace("$", "")) >= 3000:
+
+            filtered_cars.append(car)
+            # print(filtered_cars)
+
+    return filtered_cars
 
 
 assert exercise_1(cars) == [

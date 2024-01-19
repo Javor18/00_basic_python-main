@@ -10,7 +10,19 @@ bowling_game_report = [
 
 
 def exercise_4(bowling_game_report: List[str, List]) -> str:
-    return
+    # Your code here
+
+    players = []
+    for player in bowling_game_report:
+        player[1] = sum(player[1])
+        player[1] = str(player[1])
+        players.append(player)
+
+    players.sort(key=lambda player: player[1], reverse=True)
+
+    print(players)
+
+    return f"{players[0][0]} won the game with a score of {players[0][1]} points"
 
 
 assert exercise_4(bowling_game_report) == "Marty won the game with a score of 40 points"

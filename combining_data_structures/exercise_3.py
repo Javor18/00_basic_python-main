@@ -44,8 +44,24 @@ cars = [
 
 def exercise_3(cars: List[Dict]) -> int:
     # Your code here, multiple options, try to find at least two different ways
-    # Why way is the best? why?
-    return
+
+    # --------First way--------
+    # total_price = 0
+
+    # for car in cars:
+    #
+    #     total_price += int(car["price"].replace("$", ""))
+    #
+    # print(total_price)
+    # ----------------------------------------------
 
 
-assert exercise_3(cars) == 22999
+    # --------Second way--------
+    total_price = sum([int(car["price"].replace("$", "")) for car in cars])
+    # ----------------------------------------------
+
+
+    return total_price
+
+
+assert exercise_3(cars) == 25994
