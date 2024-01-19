@@ -4,12 +4,12 @@
 def exercise_11(prices: set):
     # Your code here
 
-    max_numm = max(prices)
+    max_num = max(prices)
     min_num = min(prices)
 
-    return max_numm, min_num
 
+    return max_num, min_num
 
 prices = {20000, 400, 30, 72000}
 
-assert exercise_11(prices) == 72000, 30
+assert exercise_11(prices) == (72000, 30)

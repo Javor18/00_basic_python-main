@@ -11,8 +11,6 @@ def exercise_2(set_2: set) -> set:
     return set_2
 
 
-# animals_set = set("Fox", "Eagle", "Dog", "Cat")
-
 animals_set = {"Fox", "Eagle", "Dog", "Cat"}
 
 assert exercise_2(animals_set) == {"Eagle", "Dog"}

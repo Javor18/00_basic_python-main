@@ -4,9 +4,7 @@
 def exercise_3(first_set: set, second_set: set) -> set:
     # Your code here
 
-    # filtered_set = set_1.intersection(set_2)
-
-    filtered_set = set_1 & set_2
+    filtered_set = first_set & second_set
 
     return filtered_set
 

@@ -6,8 +6,9 @@ def exercise_19(cars: set):
 
     for car in cars:
 
-        pass
+        print(car)
 
+    return True
 
 cars = {"Ferrari", "Mercedes", "Peugeot"}
 
