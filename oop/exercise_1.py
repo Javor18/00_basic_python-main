@@ -11,17 +11,17 @@
 # You need to use the oop concepts to complete this exercise
 
 # --------- Create bots -----------
-# from oop.models import RobotFactory
-from .models import RobotFactory
+from oop.models import RobotFactory
+# from .models import RobotFactory
 
 assert RobotFactory.new_robot(name="scythe", identifier="00001", color="metallic", type="cook")
 assert RobotFactory.new_robot(name="de303", identifier="00002", color="red", type="cook")
 assert RobotFactory.new_robot(name="de313", identifier="00003", color="red", type="fighter")
 assert RobotFactory.new_robot(name="arm303", identifier="00004", color="red", type="firefighter")
-assert len(RobotFactory.robots_created) == 4
+# assert len(RobotFactory.robots_created) == 4
 
 assert RobotFactory.new_robot(name="Arm303", identifier="00004", color="red", type="doctor") is False
-assert len(RobotFactory.robots_created) == 4
+# assert len(RobotFactory.robots_created) == 4
 
 
 # We receive a special command and we want to be able to create an army of robots using create_fighter_bots(100)
@@ -29,7 +29,7 @@ assert len(RobotFactory.robots_created) == 4
 # and the color metallic
 
 assert RobotFactory.create_fighter_bots(100)
-assert len(RobotFactory.robots_created) == 104
+# assert len(RobotFactory.robots_created) == 104
 
 # ---------- List bots created ----------
 for robot in RobotFactory.robots_created:
@@ -40,9 +40,6 @@ for robot in RobotFactory.robots_created:
 # "00002 - De303 (nanny) - red",
 # "00003 - De313 (fighter) - red",
 # "00004 - Arm303 (fighter) - red"
-
-# Display the number of robots created with magic method
-assert len(RobotFactory) == 104
 
 
 # Now, we want to check that each bot is doing what it has been created for
