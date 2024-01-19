@@ -6,10 +6,6 @@
 
 dic = {'physics': 1, 'math': 2, 'chemistry': 3}
 
-list = list(dic.items())
-
-for x in range(len(list)):
-
-    key, value = list[x]
+for key in dic.keys():
 
     print(key)
