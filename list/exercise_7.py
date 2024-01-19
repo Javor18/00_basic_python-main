@@ -7,4 +7,4 @@ def exercise_7(sample_list: list) -> set:
 
     return set(sample_list)
 
-assert exercise_7(string_list) == set('abc', 'xyz', '1221')
+assert exercise_7(string_list) == {'abc', 'xyz', '1221'}

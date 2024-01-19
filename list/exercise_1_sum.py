@@ -8,9 +8,9 @@ def exercise_2(numbers: list) -> int:
 
     total = 0
 
-    for x in numbers:
+    for i in numbers:
 
-        total += x
+        total += i
 
     return total
 

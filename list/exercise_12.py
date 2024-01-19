@@ -3,19 +3,7 @@
 def exercise_12(list_colors: list) -> bool:
     # Your code here
 
-    # del list_colors[5]
-    # del list_colors[4]
-    # del list_colors[0]
-    #
-    # return list_colors
-
-    filtered_list = []
-
-    for x in range(len(list_colors)):
-
-        if x != 0 and x != 4 and x != 5:
-
-            filtered_list.append(list_colors[x])
+    filtered_list = [x for x in list_colors if x != list_colors[0] and x != list_colors[4] and x != list_colors[5]]
 
     return filtered_list
 
